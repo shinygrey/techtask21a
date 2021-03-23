@@ -1,0 +1,19 @@
+nav.top{
+	ul{
+		@include flexrow;
+		list-style-type: none;
+		align-content: center;
+		justify-content: flex-end;
+		li a{
+			display: block;
+			padding: 16px 8px;
+			width: fit-content;
+			color: black;
+			text-decoration: none;
+			font-weight: bold;
+			&:hover,&:focus{
+				background-color: lightgrey;
+			}
+		}
+	}
+}

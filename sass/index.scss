@@ -1,0 +1,81 @@
+$task-blue: #487b8f;
+$task-torquoise: #448174;
+$task-red: #be3049;
+$task-grey: #eeeeee;
+
+@import '_mixins';
+@import 'header';
+@import 'content';
+@import 'controls';
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+
+	header>*,
+	main>section,
+	main>article,
+	footer>*{
+		padding-left: 5em;
+		padding-right: 5em;		
+	}
+}
+
+main{
+	margin-bottom: 4em; //offset for fixed footer
+}
+
+footer{
+	box-sizing: content-box;
+	height: 2em;
+	position: fixed;
+	bottom: 0;
+	background-color: white;
+	width: 100%;
+}
+
+section{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+h2{
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+
+dl{
+	margin: 1em;
+	dt{
+		font-style: italic;
+		margin-bottom: 0.2em;
+	}
+	dd{
+		margin-bottom: 0.5em;
+		padding-left: 2em;
+	}
+}
+
+p{
+	margin-bottom: 0.5em;
+}
+
+.bg-task-grey{
+	background-color: $task-grey;
+}
+
+.bg-task-blue{
+	color: white;
+	background-color: $task-blue;
+}
+
+.bg-task-torquoise{
+	background-color: $task-torquoise;
+}
+

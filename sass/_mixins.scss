@@ -1,0 +1,45 @@
+@mixin flexrow{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+@mixin flexcolumn{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+@mixin flexrowwrap{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+@mixin flexBasis($initialLength){
+	-webkit-flex-basis: $initialLength;
+	-moz-flex-basis: $initialLength;
+	flex-basis: $initialLength;
+}
+
+@mixin flexw($width){
+	-ms-flex: 0 0 $width;
+	flex: 0 0 $width;
+	max-width: $width;
+}
+
+@mixin container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+	margin-left: auto;
+
+	@media(min-width: 576px){max-width: 540px;}
+	@media(min-width: 768px){max-width: 720px;}
+	@media(min-width: 992px){max-width: 960px;}
+	@media(min-width: 1200px){max-width: 1140px;}
+}

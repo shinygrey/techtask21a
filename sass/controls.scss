@@ -1,0 +1,44 @@
+main button{
+	background-color: inherit;
+	border-radius: 1.5em;
+	padding: 0.8em 1.5em;
+	font-weight: bold;
+	cursor: pointer;
+	&:focus{
+		outline-style: dashed;
+	}
+}
+
+form.get-involved{
+	color: black;
+	font-size: 1.2rem;
+	background-color: white;
+	text-align: center;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+
+	select{
+		color: $task-blue;
+		font-weight: bold;
+		font-size: 1.2rem;
+		border: none;
+		border-bottom: 2px solid $task-blue;
+		&:focus{
+			outline-style: dashed;
+		}
+	}
+
+	input{
+		border-radius: 1.5em;
+		padding: 0.8em 1.5em;
+		border: none;
+		font-size: 0.9rem;
+		color: white;
+		background-color: $task-red;
+		font-weight: bold;
+		cursor: pointer;
+		&:focus{
+			outline-style: dashed;
+		}
+	}
+}

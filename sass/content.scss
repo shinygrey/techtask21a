@@ -1,0 +1,120 @@
+.card-deck{
+	@include flexrow;
+	>.card{
+		margin: 0.8em;
+		padding: 0.8em;
+	}
+}
+
+section.hero-pic-bg{
+	box-sizing: border-box;
+	background-image: url("./streetwindy-K7ZNfUI5EE4-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover; 
+	max-width: 100vw;
+	width: 100%;
+	min-height: 70vh;
+	height: auto;
+
+	>*{
+		margin-bottom: 0.8rem;
+	}
+
+	h1{
+		width: fit-content;
+		color: white;
+		background-color: $task-blue;
+		font-size: 5em;
+		padding: 0.5em 1em;
+	}
+
+	p{
+		width: 50%;
+		font-size: 1.1em;
+		color: $task-blue;
+		background-color: white;
+		padding: 1em;
+	}
+
+	button{
+		color: $task-red;
+		background-color: white;
+		border: none;
+		font-size: 1.1em
+	}
+}
+
+section.social-change-charity{
+	padding-top: 0;
+	padding-left: 0;
+	padding-bottom: 0;
+	background-color: $task-torquoise;
+	@include flexrow;
+	>div{
+		@include flexBasis(50%);
+		max-width: 50%;
+	}
+	>.left-pic-bg{
+		box-sizing: border-box;
+		background-image: url("./mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg");
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: cover;
+		height: 50vh;
+	}
+	>.right-text{
+		padding: 2em;
+		color: white;
+		>button{
+			font-size: 1em;
+			margin-top: 1em;
+			color: inherit;
+			border-color: inherit;
+		}
+		
+	}
+}
+
+section.how-can-we-help{
+	background-color: $task-grey;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+section.what-do-we-do{
+	color: white;
+	background-color: $task-blue;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	.card-deck{
+		justify-content: space-evenly;
+		color: black;
+		>.card{
+			padding: 2em;
+			@include flexcolumn;
+			justify-content: space-between;
+			background-color: white;
+			text-align: center;
+			p{
+				margin: 0.5em 0;
+			}
+		}
+	}
+	button{
+		color: $task-red;
+		background-color: white;
+	}
+	.more-about{
+		@include flexrow;
+		justify-content: center;
+		>button{
+			border:none;
+		};
+	}
+}
+
+footer{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
